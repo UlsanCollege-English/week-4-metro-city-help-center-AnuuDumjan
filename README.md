@@ -13,29 +13,29 @@ pytest -q
 
 ## Complexity
 ### `ActionStack.pop`
-- Time:
-- Why:
+- Time:O(1)
+- Why:Removing the last element from a Python list using .pop() takes constant time.
 
 ### `RequestQueue.dequeue`
-- Time:
-- Why:
+- Time:O(1)
+- Why:collections.deque.popleft() removes from the front efficiently in constant time.
 
 ### `is_note_balanced`
-- Time:
-- Why:
+- Time:O(n)
+- Why:The function loops through each character in the string once, and each stack operation (push/pop) is O(1).
 
 ### `process_request_line`
-- Time:
-- Why:
+- Time:O(n)
+- Why:Each citizen is added to the queue once and removed once, so total operations are proportional to the number of citizens.
 
 ## Edge-case checklist
-- [ ] empty action stack
-- [ ] empty request queue
-- [ ] empty string for `is_note_balanced`
-- [ ] note with no brackets
-- [ ] empty citizen list
+- [x] empty action stack
+- [x] empty request queue
+- [x] empty string for `is_note_balanced`
+- [x] note with no brackets
+- [x] empty citizen list
 
 ## Assistance & sources
-- AI used? (Y/N):
-- What it helped with:
-- Other sources:
+- AI used? (Y/N):Y
+- What it helped with:Understanding stack and queue implementation, writing functions, and explaining time complexity in a simple way.
+- Other sources:Class notes and lecture examples
